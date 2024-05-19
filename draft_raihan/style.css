@@ -1,0 +1,285 @@
+
+ *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif
+ }
+    .global-btn{
+    width: 130px;
+    height:50px;
+    background-color: black;
+    color:white;
+    
+}
+.second-section{
+   background-color: darkolivegreen;
+   padding: 10rem 0;
+   text-align: center;
+}
+ .first-section{
+    background-image:url(./images/01.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 10rem 0;
+    text-align: center;
+    background-position: center;
+ }
+ .second-section h2{
+   font-size: 40px;
+   margin: 10px 0;
+
+ }
+ .second-section p{
+   margin: 2px 0;
+ }
+ .first-section h2{
+    font-size: 45px;
+    margin:10px 0;
+ }
+ .first-section p{
+    margin:2px 0;
+ }
+ body{
+   min-height: 100vh;
+ }
+ nav{
+   background-color: white;
+   box-shadow: 3px 3 px 5px rgba(0,0,0,0.1);
+ }
+ nav ul{
+   width:100%;
+   list-style:none;
+   display: flex;
+    
+   justify-content:flex-end;
+align-items: center;
+   
+ }
+ .stylist-box  {
+  width: 100%;
+  list-style: none;
+  display: none;
+  justify-content:center;
+  
+
+ }
+ 
+ .stylist-box li{
+  height: 25px;
+  padding: 2px;
+ margin-bottom: 0px;
+  margin-right: 0px;
+  align-items: center;
+  color: black;
+  border: 1px solid black;
+  outline-style: solid;
+  outline-color: royalblue;
+  outline-width: thin;
+  cursor: pointer;
+  
+ }
+ .stylist-box li:hover{
+  background-color: azure;
+ }
+ .item.selected{
+  color:Black;
+  background-color: purple;
+ }
+ nav li{
+   height: 50px;
+   padding:5px;
+   margin-left: 4px;
+    
+   
+ }
+ nav a{
+   height: 100%;
+   padding: 2px 10px;
+   
+   text-decoration: none;
+   display: flex;
+   align-items: center;
+    
+   
+ }
+ nav ul li a:hover{
+   background-color:white;
+   color:black;
+   text-align: center;
+   border-radius: 5px;
+     outline: solid 4px purple; 
+     transition: .3s ease;
+    
+ }
+ nav li:first-child{
+   margin-right: auto;
+ }
+ .sidebar{
+  position:fixed;
+  top:0;
+  left:0;
+  height:100vh;
+  width:250px;
+  z-index:999;
+  background-color:white;
+  box-shadow:-10px 0 10 px rgba(0,0,0,0.1);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+   justify-content: flex-start;
+}
+
+.sidebar li{
+  width:100%;
+ 
+}
+.sidebar a{
+  width:100%;
+}
+ul.sidebar li ul.four{
+  display: none; /* Initially hidden */
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+   
+}
+ 
+ul.sidebar li ul.four li{
+  border-bottom: 1px solid #ddd;
+}
+ul.sidebar li ul.four a{
+  padding: 15px 20px;
+}
+.menu{
+  display: none;
+}
+@media(max-width:800px){
+  .hideonmobile{
+    display:none;
+  }
+  .menu{
+    display:block;
+  }
+}
+@media(max-width:768px){
+  
+}
+ .icon{
+  height:25px;
+  weight:25px;
+  
+ }
+ .icon2{
+  
+  height:25px;
+  width:25px;
+  text-align: center;
+  position:relative;
+  top: 7px;
+  
+ }
+ .icon3{
+  height: 25px;
+    width: 25px;
+     
+    position: absolute; /* Using absolute positioning within a fixed parent */
+    right: 4px; /* Aligns the child element to the right of the parent */
+   
+    
+    
+ }
+ ul .kk li .hideonmobile  {
+  display: inline-block;
+   position: relative;
+   
+    
+   margin-right: 5px;
+ 
+}
+ul.kk li.hideonmobile a{
+  display: block;
+   
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+  
+}
+ul.kk li.hideonmobile:hover .two{
+  display: block;
+}
+ ul.kk li.hideonmobile ul.two {
+  width: 450px;
+  height:250px;
+  z-index: 999;
+  display: none;
+  position: absolute;
+  column-count: 2;
+  column-gap: 1px;
+   top:50px;
+  right:5px;
+  outline: solid 2px green;
+  border-radius: 5px;
+  background-color: white;
+   
+}
+
+.search-box{
+  width: 60%;
+  background: #fff;
+  margin: 20px auto 0;
+  border-radius: 5px;
+}
+.row{
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+input{
+  flex:1;
+  height: 50px;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  font-size: 18px;
+  color: #333;
+
+}
+button{
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+button .fa-solid{
+  width: 25px;
+  color: #555;
+  font-size: 22px;
+  cursor: pointer;
+}
+ ::placeholder{
+  color: #555;
+ }
+ .result-box ul{
+  border-top: 1px solid #999;
+  padding: 15px 10px;
+ }
+ .result-box ul li{
+  list-style: none;
+  border-radius: 3px;
+  padding: 15px 10px;
+  cursor: pointer;
+  text-align:left;
+ }
+ .result-box ul li:hover{
+  background: cornflowerblue;
+ }
+ .result-box{
+  max-height: 300px;
+  overflow-y: scroll;
+  transition: .3s;
+ }
+ 
