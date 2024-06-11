@@ -1,0 +1,4 @@
+npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
+
+
+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
